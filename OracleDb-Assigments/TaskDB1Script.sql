@@ -1,0 +1,29 @@
+CREATE TABLE Manger(
+ id NUMBER PRIMARY KEY,
+ name VARCHAR2(100),
+ age NUMBER,
+ birth_date DATE ,
+ address VARCHAR2(200)
+);
+
+
+ALTER TABLE Manger DROP COLUMN ADDRESS ;
+
+ALTER TABLE MANGER 
+ADD (
+city_address VARCHAR2(200),
+street VARCHAR2(100)
+);
+
+
+ALTER TABLE MANGER RENAME COLUMN name TO full_name;
+
+ALTER TABLE MANGER READ ONLY;
+
+CREATE TABLE Owner AS SELECT id , full_name, birth_date FROM Manger;
+
+ALTER TABLE Manger RENAME TO Master;
+SELECT  * FROM Master;
+
+DROP TABLE Master;
+DROP TABLE Owner;
