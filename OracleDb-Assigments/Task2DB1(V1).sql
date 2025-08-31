@@ -36,3 +36,4 @@ DROP TABLE PRD_DOCTOR;
 
 
 
+SELECT TRIM (TRAILING 'm' FROM '     my Name is Adam   ') trm from dual;

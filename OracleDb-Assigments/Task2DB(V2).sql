@@ -37,5 +37,6 @@ SELECT
        FROM Employees2;
 
 DROP TABLE Employees2;
-
+ 
+SELECT LTRIM ('234234217www.mywebsite.com', '0123456789') trm from dual;
 

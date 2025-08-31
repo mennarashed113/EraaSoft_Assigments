@@ -66,7 +66,7 @@
         <h2>User Registration</h2>
         <form action="Task2Result.jsp" method="post">
             <label>Full Name:</label>
-            <input type="text" name="fullName" required>
+            <input type="text" name="fullName	" required>
 
             <label>Password:</label>
             <input type="password" name="password" required>
