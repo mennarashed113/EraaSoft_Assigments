@@ -34,9 +34,9 @@ public class ItemServiceImpl implements ItemService {
 	                    + item.getTotalNumber() + ")";
 
 	            System.out.println("sql --> " + sql);
-	           int rows = statement.executeUpdate(sql);
+	            statement.execute(sql);
 
-	              return rows > 0;
+	            return true;
 	        } catch (SQLException e) {
 	        	System.out.println("---> " + e.getMessage());
 	        } finally {
