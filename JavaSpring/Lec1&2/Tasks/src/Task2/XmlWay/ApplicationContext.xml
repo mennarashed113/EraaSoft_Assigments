@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- PersonService bean -->
+    <bean id="personService" class="Task2.XmlWay.PersonService"/>
+
+    <!-- AccountServiceImpl bean with dependency injection -->
+    <bean id="accountService" class="Task2.XmlWay.AccountServiceImpl">
+        <property name="personService" ref="personService"/>
+    </bean>
+
+</beans>
